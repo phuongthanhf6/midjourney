@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color-1: #0396ff;
+    --color-2: #7367f0;
+    --color-3: #32ccbc;
+    --color-4: #f55555;
+    --color-5: #ffd503;
+    --color-6: #ff0396;
+    --font-1: "Anton", sans-serif;
+    --font-2: "Sofia", cursive;
+    --font-3: "Be Vietnam Pro", sans-serif;
+    --font-4: "Carattere", cursive;
+    --font-5: "Playball", cursive;
+    --font-system: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* 
+    Ta dùng mẹo như sau:
+    1 rem = 16px = 100%
+    1 rem = 10px = 62.5%
+    lúc này ta muốn chuyển 1 px nào đó qua rem thì chỉ cần chia cho 10px
+    vd: width: 50px = 5rem ( còn như thông thường 50px / 16px = 3.125rem)  
+*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-system);
+    margin: 32px;
+    line-height: 1.6;
+    /* heading h2 = 0 */
+    counter-reset: heading-h2;
+}
+
+::selection {
+    background: var(--color-2);
+    color: #fff;
+}
+
+h1 {
+    margin: 28px 0;
+    font-family: var(--font-1);
+    color: var(--color-2);
+    font-size: 4.6rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 3px rgba(142, 113, 246, 0.7);
+}
+
+h2 {
+    margin: 40px 0 20px;
+    display: block;
+    font-family: var(--font-1);
+    color: var(--color-1);
+    font-size: 2.6rem;
+    font-weight: 600;
+    /* Mỗi lần gặp thẻ h2 sẽ tăng +1  */
+    counter-increment: heading-h2;
+    /* đặt cho heading-h3 = 0 mỗi khi gặp thẻ h2 
+        -> reset thẻ h3 về 0 khi gặp thẻ h2
+    */
+    counter-reset: heading-h3;
+}
+
+h2::before {
+    content: counter(heading-h2) " - ";
+}
+
+h3 {
+    margin: 32px 0 16px;
+    font-family: var(--font-system);
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--color-3);
+    /* Mỗi lần gặp thẻ h3 sẽ tăng +1 */
+    counter-increment: heading-h3;
+    /* đặt cho heading-h4 = 0 mỗi khi gặp thẻ h3 
+        -> reset thẻ h4 về 0 khi gặp thẻ h3
+    */
+    counter-reset: heading-h4;
+}
+
+h3::before {
+    content: counter(heading-h2) "." counter(heading-h3) " - ";
+}
+
+h4 {
+    margin: 32px 0 16px;
+    font-family: var(--font-system);
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--color-5);
+    text-shadow: 0px 1px rgba(182, 151, 0, 0.7);
+    /* Mỗi lần gặp thẻ h4 sẽ tăng +1  */
+    counter-increment: heading-h4;
+    counter-reset: heading-h5;
+}
+
+h4::before {
+    content: counter(heading-h2) "." counter(heading-h3) "." counter(heading-h4)
+        " ";
+    margin-right: 14px;
+}
+
+h5 {
+    margin: 32px 0 16px;
+    font-family: var(--font-system);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-2);
+
+    /* Mỗi lần gặp thẻ h5 sẽ tăng +1  */
+    counter-increment: heading-h5;
+}
+
+h5::before {
+    content: counter(heading-h2) "." counter(heading-h3) "." counter(heading-h4)
+        "." counter(heading-h5) " ";
+    margin-right: 14px;
+}
+
+p {
+    margin: 10px 0;
+    font-family: var(--font-3);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2;
+    color: rgb(31, 41, 55);
+}
+
+strong {
+    font-family: var(--font-3);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+note,
+note-1,
+span,
+example {
+    color: var(--color-4);
+    font-size: 1.8rem;
+    font-family: var(--font-3);
+    font-weight: 500;
+}
+
+note-2 {
+    margin: 10px 0;
+    display: block;
+    color: var(--color-6);
+    font-family: var(--font-1);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+example {
+    margin: 24px 0 12px;
+    display: block;
+    color: #000;
+    line-height: 2;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+span {
+    color: #000;
+}
+
+note-1 {
+    color: var(--color-2);
+}
+
+ol > li {
+    font-size: 1.8rem;
+    font-family: var(--font-3);
+}
+
+ul > li {
+    font-size: 1.8rem;
+}
+
+li note-1 {
+    margin-right: 10px;
+}
+
+.border-image-clip-path {
+    margin: 50px 0;
+    border-bottom: 10px solid;
+    border-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%) 1;
+    clip-path: inset(0px round 0);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+}
+
+/* border image animation */
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+/* ======================================================== */
+.content img {
+    max-width: 100%;
+}
+
+.content .image {
+    width: 200px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.content note-1 {
+    margin-right: 10px;
+}
+
+.content figure {
+    display: inline-block;
+    border: 1px solid #d0d0d0;
+}
+
+.content figure + figure {
+    margin-left: 20px;
+}
+
+.content figcaption {
+    width: 200px;
+    margin-top: -4px;
+    font-size: 1.6rem;
+    font-style: italic;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    
+}
