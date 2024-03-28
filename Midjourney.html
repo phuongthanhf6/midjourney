@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Midjourney</title>
+        <!-- Embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Carattere&family=Playball&family=Anton&family=Sofia&family=Montserrat:wght@400;500;600&family=Be+Vietnam+Pro:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Embed Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <!-- Embed Css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <ul class="menu">
+                <li><a href="./index.html">AI</a></li>
+                <li><a href="./Midjourney.html">Midjourney</a></li>
+            </ul>
+        </header>
+        <div class="menu-left">
+            <ul>
+                <li><a href="#prompt">Prompt</a></li>
+                <li><a href="#upscale">Upscale</a></li>
+                <li><a href="#example">List Prompt Good</a></li>
+                <li><a href="#!"></a></li>
+                <li><a href="#!"></a></li>
+            </ul>
+        </div>
+        <h1>Midjourney</h1>
+        <h2 id="prompt">Prompt</h2>
+        <ul>
+            <li>
+                <b>Subject:(Đối tượng)</b> person, animal, character, location,
+                object
+            </li>
+            <li>
+                <b>Medium:(style)</b> photo, painting, illustration, sculpture,
+                doodle, tapestry, Ballpoint Pen Sketch, Graffiti,
+                Paint-by-Numbers, Pencil Sketch, Watercolor, Pixel Art,
+                Blacklight Painting
+            </li>
+            <li>
+                <b>Environment:(vị trí địa lý)</b> indoors, outdoors, on the
+                moon, underwater, in the city
+            </li>
+            <li>
+                <b>Lighting:(ánh sáng)</b> soft, ambient, overcast, neon, studio
+                lights
+            </li>
+            <li>
+                <b>Color:(màu sắc)</b> vibrant, muted, bright, monochromatic,
+                colorful, black and white, pastel, Millennial Pink, Acid Green,
+                Canary Yellow, Ebony, Neutral, CMYK, Blue Tinted, Iridescent,
+                Pink and Blue
+            </li>
+            <li><b>Mood:(tâm trạng)</b> sedate, calm, raucous, energetic</li>
+            <li>
+                <b>Composition:(bố cục) </b>portrait, headshot, closeup,
+                birds-eye view
+            </li>
+        </ul>
+        <p>
+            <note-2>Medium:</note-2>
+            <note-1>&lt;any art style&gt;</note-1> style cat
+        </p>
+        <p>
+            <note-2>Time:</note-2>an illustration of a
+            <note-1>&lt;time period&gt;</note-1> cat
+        </p>
+        <p>
+            <note-2>Cảm xúc trên mặt:</note-2>
+            <note-1>&lt;emotion&gt;</note-1> cat
+        </p>
+        <p>
+            <note-2>Màu sắc:</note-2>
+            <note-1>&lt;color word&gt;</note-1> colored cat
+        </p>
+        <!--  -->
+        <h2 id="upscale">Upscale</h2>
+        <p><b>Upscale (Subtle)</b> giữ các chi tiết rất giống với bản gốc.</p>
+        <p><b>Upscale (Creative)</b> thêm các chi tiết mới vào hình ảnh</p>
+        <!--  -->
+        <h2 id="example">Các câu prompt hay</h2>
+
+        <!-- Java -->
+        <script>
+            const menuItems = document.querySelectorAll("ul li a");
+
+            for (const menuItem of menuItems) {
+                menuItem.addEventListener("click", (event) => {
+                    event.preventDefault();
+
+                    const targetSection = document.querySelector(
+                        event.target.getAttribute("href")
+                    );
+                    targetSection.scrollIntoView({
+                        behavior: "smooth",
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>

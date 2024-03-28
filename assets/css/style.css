@@ -29,11 +29,12 @@ html {
 }
 
 body {
-    font-family: var(--font-system);
+    font-family: var(--font-3);
     margin: 32px;
     line-height: 1.6;
     /* heading h2 = 0 */
     counter-reset: heading-h2;
+    font-weight: 300;
 }
 
 ::selection {
@@ -41,12 +42,16 @@ body {
     color: #fff;
 }
 
+b {
+    font-weight: bold;
+}
+
 h1 {
     margin: 28px 0;
     font-family: var(--font-1);
     color: var(--color-2);
     font-size: 4.6rem;
-    font-weight: 700;
+    font-weight: 600;
     text-shadow: 3px 3px 3px rgba(142, 113, 246, 0.7);
 }
 
@@ -126,7 +131,7 @@ p {
     margin: 10px 0;
     font-family: var(--font-3);
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2;
     color: rgb(31, 41, 55);
 }
@@ -227,6 +232,31 @@ li note-1 {
 }
 
 /* ======================================================== */
+
+/* header */
+.header {
+    height: 50px;
+    background: #000;
+}
+
+.header .menu {
+    display: flex;
+    gap: 30;
+    margin-left: 60px;
+}
+
+.header .menu li {
+    margin-right: 30px;
+}
+
+.header .menu a {
+    display: inline-block;
+    padding: 8px 0 10px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
 .content img {
     max-width: 100%;
 }
@@ -393,4 +423,25 @@ li note-1 {
 
 .check-lora {
     margin-top: -72px;
+}
+/* =================================== */
+.menu-left {
+    background: var(--color-2);
+    width: 200px;
+}
+.menu-left a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px;
+}
+.menu-left li {
+    margin-bottom: 0px;
+    border-bottom: 1px Dashed #cccccc6a;
+}
+
+.menu-left a:hover {
+    color: var(--color-5);
+    font-weight: 500;
+    background: #ffffff20;
 }
