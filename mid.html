@@ -42,39 +42,666 @@
             </ul>
         </header>
 
-        <h1>Midjourney</h1>
-        <h2 id="prompt">Prompt</h2>
-        <ul>
-            <li>
-                <b>Subject:(Đối tượng)</b> person, animal, character, location,
-                object
-            </li>
-            <li>
-                <b>Medium:(style)</b> photo, painting, illustration, sculpture,
-                doodle, tapestry, Ballpoint Pen Sketch, Graffiti,
-                Paint-by-Numbers, Pencil Sketch, Watercolor, Pixel Art,
-                Blacklight Painting
-            </li>
-            <li>
-                <b>Environment:(vị trí địa lý)</b> indoors, outdoors, on the
-                moon, underwater, in the city
-            </li>
-            <li>
-                <b>Lighting:(ánh sáng)</b> soft, ambient, overcast, neon, studio
-                lights
-            </li>
-            <li>
-                <b>Color:(màu sắc)</b> vibrant, muted, bright, monochromatic,
-                colorful, black and white, pastel, Millennial Pink, Acid Green,
-                Canary Yellow, Ebony, Neutral, CMYK, Blue Tinted, Iridescent,
-                Pink and Blue
-            </li>
-            <li><b>Mood:(tâm trạng)</b> sedate, calm, raucous, energetic</li>
-            <li>
-                <b>Composition:(bố cục) </b>portrait, headshot, closeup,
-                birds-eye view
-            </li>
-        </ul>
+        <div class="content-main">
+            <h1>Midjourney</h1>
+            <h2 id="prompt">Cấu trúc của 1 Prompt</h2>
+            <ul>
+                Subject Medium Style Composition Emotions Location Weather
+                Conditions color
+            </ul>
+        </div>
+
+        <!-- ========================================================================================= -->
+        <div class="content-main">
+            <div class="list">
+                <!-- Medium -->
+                <div class="item">
+                    <note-2>Medium</note-2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>English</th>
+                                <th>Tiếng Việt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Photo</td>
+                                <td>Ảnh</td>
+                            </tr>
+                            <tr>
+                                <td>Painting</td>
+                                <td>Tranh</td>
+                            </tr>
+                            <tr>
+                                <td>Illustration</td>
+                                <td>Minh họa</td>
+                            </tr>
+                            <tr>
+                                <td>Sculpture</td>
+                                <td>Điêu khắc</td>
+                            </tr>
+                            <tr>
+                                <td>Doodle</td>
+                                <td>Bản vẽ lung tung</td>
+                            </tr>
+                            <tr>
+                                <td>Tapestry</td>
+                                <td>Thảm</td>
+                            </tr>
+                            <tr>
+                                <td>Ballpoint Pen Sketch</td>
+                                <td>Bản vẽ bằng bút bi</td>
+                            </tr>
+                            <tr>
+                                <td>Graffiti</td>
+                                <td>Nghệ thuật vẽ tường</td>
+                            </tr>
+                            <tr>
+                                <td>Paint-by-Numbers</td>
+                                <td>Vẽ theo số</td>
+                            </tr>
+                            <tr>
+                                <td>Pencil Sketch</td>
+                                <td>Bản phác thảo bằng bút chì</td>
+                            </tr>
+                            <tr>
+                                <td>Watercolor</td>
+                                <td>Màu nước</td>
+                            </tr>
+                            <tr>
+                                <td>Pixel Art</td>
+                                <td>Nghệ thuật Pixel</td>
+                            </tr>
+                            <tr>
+                                <td>Blacklight Painting</td>
+                                <td>Tranh sơn nước dưới đèn đen</td>
+                            </tr>
+                            <tr>
+                                <td>Acrylic Painting</td>
+                                <td>Tranh sơn acrylic</td>
+                            </tr>
+                            <tr>
+                                <td>Comic Book</td>
+                                <td>Truyện tranh</td>
+                            </tr>
+                            <tr>
+                                <td>Oil Painting</td>
+                                <td>Tranh sơn dầu</td>
+                            </tr>
+                            <tr>
+                                <td>Digital Art</td>
+                                <td>Nghệ thuật số</td>
+                            </tr>
+                            <tr>
+                                <td>Clay</td>
+                                <td>Đất sét</td>
+                            </tr>
+                            <tr>
+                                <td>Pastel</td>
+                                <td>Màu pastel</td>
+                            </tr>
+                            <tr>
+                                <td>3D VFX</td>
+                                <td>Hiệu ứng 3D</td>
+                            </tr>
+                            <tr>
+                                <td>Fresco Painting</td>
+                                <td>Tranh sơn vôi</td>
+                            </tr>
+                            <tr>
+                                <td>Pen and Ink</td>
+                                <td>Bút và mực</td>
+                            </tr>
+                            <tr>
+                                <td>Stone</td>
+                                <td>Đá</td>
+                            </tr>
+                            <tr>
+                                <td>Pencil Drawing</td>
+                                <td>Bản vẽ bằng bút chì</td>
+                            </tr>
+                            <tr>
+                                <td>Chalk</td>
+                                <td>Phấn</td>
+                            </tr>
+                            <tr>
+                                <td>Acrylic Resin</td>
+                                <td>Nhựa acrylic</td>
+                            </tr>
+                            <tr>
+                                <td>Charcoal Drawing</td>
+                                <td>Bản vẽ bằng than</td>
+                            </tr>
+                            <tr>
+                                <td>Collage</td>
+                                <td>Collage</td>
+                            </tr>
+                            <tr>
+                                <td>Metal</td>
+                                <td>Kim loại</td>
+                            </tr>
+                            <tr>
+                                <td>Ink Wash</td>
+                                <td>Bản vẽ bằng mực</td>
+                            </tr>
+                            <tr>
+                                <td>Mixed Media</td>
+                                <td>Trộn lẫn các phương tiện</td>
+                            </tr>
+                            <tr>
+                                <td>Glass</td>
+                                <td>Kính</td>
+                            </tr>
+                            <tr>
+                                <td>Crayon</td>
+                                <td>Bút sáp</td>
+                            </tr>
+                            <tr>
+                                <td>Printmaking</td>
+                                <td>In ấn</td>
+                            </tr>
+                            <tr>
+                                <td>Wood</td>
+                                <td>Gỗ</td>
+                            </tr>
+                            <tr>
+                                <td>Colored Pencil</td>
+                                <td>Bút màu</td>
+                            </tr>
+                            <tr>
+                                <td>Screen Print</td>
+                                <td>In màn hình</td>
+                            </tr>
+                            <tr>
+                                <td>Papercraft</td>
+                                <td>Nghệ thuật giấy</td>
+                            </tr>
+                            <tr>
+                                <td>Wood Block</td>
+                                <td>Khối gỗ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Style-->
+                <div class="item">
+                    <note-2>Style</note-2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>English</th>
+                                <th>Tiếng Việt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RETRO / VINTAGE</td>
+                                <td>Cổ điển / Retro</td>
+                            </tr>
+                            <tr>
+                                <td>TIME PERIODS</td>
+                                <td>Thời kỳ</td>
+                            </tr>
+                            <tr>
+                                <td>ARTIST INFLUENCE</td>
+                                <td>Ảnh hưởng của nghệ sĩ</td>
+                            </tr>
+                            <tr>
+                                <td>MOVIE REFERENCES</td>
+                                <td>Tham khảo từ phim</td>
+                            </tr>
+                            <tr>
+                                <td>MEDIEVAL</td>
+                                <td>Trung cổ</td>
+                            </tr>
+                            <tr>
+                                <td>RENAISSANCE</td>
+                                <td>Phục hưng</td>
+                            </tr>
+                            <tr>
+                                <td>PIXAR ANIMATION</td>
+                                <td>Hoạt hình của Pixar</td>
+                            </tr>
+                            <tr>
+                                <td>FANTASY</td>
+                                <td>Huyền bí</td>
+                            </tr>
+                            <tr>
+                                <td>IMPRESSIONISM</td>
+                                <td>Ấn tượng phái</td>
+                            </tr>
+                            <tr>
+                                <td>DISNEY ANIMATION</td>
+                                <td>Hoạt hình của Disney</td>
+                            </tr>
+                            <tr>
+                                <td>CARTOON</td>
+                                <td>Phim hoạt hình</td>
+                            </tr>
+                            <tr>
+                                <td>SURREALISM</td>
+                                <td>Siêu thực họa</td>
+                            </tr>
+                            <tr>
+                                <td>STEAMPUNK</td>
+                                <td>Thời đại hơi nước</td>
+                            </tr>
+                            <tr>
+                                <td>CYBERPUNK</td>
+                                <td>Thời đại cyber</td>
+                            </tr>
+                            <tr>
+                                <td>ANIME</td>
+                                <td>Hoạt hình Nhật Bản</td>
+                            </tr>
+                            <tr>
+                                <td>FASHION</td>
+                                <td>Thời trang</td>
+                            </tr>
+                            <tr>
+                                <td>POP ART</td>
+                                <td>Nghệ thuật dân gian</td>
+                            </tr>
+                            <tr>
+                                <td>ISOMETRIC VIEW</td>
+                                <td>Góc nhìn isometric</td>
+                            </tr>
+                            <tr>
+                                <td>BLACK AND WHITE</td>
+                                <td>Trắng đen</td>
+                            </tr>
+                            <tr>
+                                <td>CARICATURE</td>
+                                <td>Caricature</td>
+                            </tr>
+                            <tr>
+                                <td>HORROR</td>
+                                <td>Kinh dị</td>
+                            </tr>
+                            <tr>
+                                <td>ANCIENT</td>
+                                <td>Cổ đại</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Composition -->
+                <div class="item">
+                    <note-2>Composition</note-2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>English</th>
+                                <th>Tiếng Việt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ULTRA WIDE ANGLE</td>
+                                <td>Góc rộng siêu rộng</td>
+                            </tr>
+                            <tr>
+                                <td>WIDE ANGLE SHOT</td>
+                                <td>Cảnh góc rộng</td>
+                            </tr>
+                            <tr>
+                                <td>MACRO SHOT</td>
+                                <td>Cảnh macro</td>
+                            </tr>
+                            <tr>
+                                <td>BIRD'S EYE VIEW</td>
+                                <td>Góc nhìn từ trên cao như chim đậu</td>
+                            </tr>
+                            <tr>
+                                <td>FULL SHOT ANGLE</td>
+                                <td>Cảnh toàn bộ</td>
+                            </tr>
+                            <tr>
+                                <td>FULL BODY SHOT</td>
+                                <td>Cảnh toàn thân</td>
+                            </tr>
+                            <tr>
+                                <td>MEDIUM SHOT</td>
+                                <td>Cảnh trung bình</td>
+                            </tr>
+                            <tr>
+                                <td>SATELLITE VIEW</td>
+                                <td>Góc nhìn từ vệ tinh</td>
+                            </tr>
+                            <tr>
+                                <td>GLAMOUR SHOT</td>
+                                <td>Cảnh đẹp hút mắt</td>
+                            </tr>
+                            <tr>
+                                <td>COWBOY SHOT</td>
+                                <td>Cảnh tiểu sử</td>
+                            </tr>
+                            <tr>
+                                <td>EYE LEVEL SHOT</td>
+                                <td>Cảnh mắt người xem</td>
+                            </tr>
+                            <tr>
+                                <td>PORTRAIT SHOT</td>
+                                <td>Cảnh chân dung</td>
+                            </tr>
+                            <tr>
+                                <td>CLOSE UP SHOT</td>
+                                <td>Cảnh chụp từ xa gần</td>
+                            </tr>
+                            <tr>
+                                <td>FAR SHOT ANGLE</td>
+                                <td>Cảnh xa rộng</td>
+                            </tr>
+                            <tr>
+                                <td>CINEMATIC SHOT</td>
+                                <td>Cảnh phim</td>
+                            </tr>
+                            <tr>
+                                <td>EXTREME CLOSE UP SHOT</td>
+                                <td>Cảnh chụp từ xa cận</td>
+                            </tr>
+                            <tr>
+                                <td>GROUND SHOT ANGLE</td>
+                                <td>Cảnh góc từ dưới lên</td>
+                            </tr>
+                            <tr>
+                                <td>SHALLOW DEPTH OF FIELD</td>
+                                <td>Độ sâu trường ảnh mông lung</td>
+                            </tr>
+                            <tr>
+                                <td>CROWD SHOT</td>
+                                <td>Cảnh đám đông</td>
+                            </tr>
+                            <tr>
+                                <td>LOW ANGLE</td>
+                                <td>Cảnh góc thấp</td>
+                            </tr>
+                            <tr>
+                                <td>WIDE DEPTH OF FIELD</td>
+                                <td>Độ sâu trường ảnh rộng</td>
+                            </tr>
+                            <tr>
+                                <td>HIGH ANGLE</td>
+                                <td>Cảnh góc cao</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Color -->
+                <div class="item">
+                    <note-2>Color</note-2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>English</th>
+                                <th>Tiếng Việt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>vibrant</td>
+                                <td>sống động</td>
+                            </tr>
+                            <tr>
+                                <td>muted</td>
+                                <td>tối màu</td>
+                            </tr>
+                            <tr>
+                                <td>bright</td>
+                                <td>sáng</td>
+                            </tr>
+                            <tr>
+                                <td>monochromatic</td>
+                                <td>đơn sắc</td>
+                            </tr>
+                            <tr>
+                                <td>colorful</td>
+                                <td>đa màu sắc</td>
+                            </tr>
+                            <tr>
+                                <td>black and white</td>
+                                <td>đen và trắng</td>
+                            </tr>
+                            <tr>
+                                <td>pastel</td>
+                                <td>màu pastel</td>
+                            </tr>
+                            <tr>
+                                <td>Millennial Pink</td>
+                                <td>Hồng Millennial</td>
+                            </tr>
+                            <tr>
+                                <td>Acid Green</td>
+                                <td>Màu xanh acid</td>
+                            </tr>
+                            <tr>
+                                <td>Canary Yellow</td>
+                                <td>Vàng canary</td>
+                            </tr>
+                            <tr>
+                                <td>Ebony</td>
+                                <td>Màu đen sậm</td>
+                            </tr>
+                            <tr>
+                                <td>Neutral</td>
+                                <td>Màu trung tính</td>
+                            </tr>
+                            <tr>
+                                <td>CMYK</td>
+                                <td>Màu CMYK</td>
+                            </tr>
+                            <tr>
+                                <td>Blue Tinted</td>
+                                <td>Màu xanh</td>
+                            </tr>
+                            <tr>
+                                <td>Iridescent</td>
+                                <td>Màu bóng lấp lánh</td>
+                            </tr>
+                            <tr>
+                                <td>Pink and Blue</td>
+                                <td>Hồng và xanh</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Emotions-->
+                <div class="item">
+                    <note-2>Emotions</note-2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>English</th>
+                                <th>Tiếng Việt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SAD</td>
+                                <td>Buồn</td>
+                            </tr>
+                            <tr>
+                                <td>FEAR</td>
+                                <td>Sợ hãi</td>
+                            </tr>
+                            <tr>
+                                <td>GLOOMY</td>
+                                <td>Âm u</td>
+                            </tr>
+                            <tr>
+                                <td>HAPPY</td>
+                                <td>Vui vẻ</td>
+                            </tr>
+                            <tr>
+                                <td>ROMANTIC</td>
+                                <td>Lãng mạn</td>
+                            </tr>
+                            <tr>
+                                <td>CHEERFUL</td>
+                                <td>Vui mừng</td>
+                            </tr>
+                            <tr>
+                                <td>ANGRY</td>
+                                <td>Tức giận</td>
+                            </tr>
+                            <tr>
+                                <td>DEPRESSED</td>
+                                <td>Trầm cảm</td>
+                            </tr>
+                            <tr>
+                                <td>DARK</td>
+                                <td>U ám</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Location -->
+                <div class="item">
+                    <note-2>Location</note-2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>English</th>
+                                <th>Tiếng Việt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>GARDEN</td>
+                                <td>Vườn</td>
+                            </tr>
+                            <tr>
+                                <td>STREET</td>
+                                <td>Phố</td>
+                            </tr>
+                            <tr>
+                                <td>OCEAN</td>
+                                <td>Đại dương</td>
+                            </tr>
+                            <tr>
+                                <td>CASTLE</td>
+                                <td>Lâu đài</td>
+                            </tr>
+                            <tr>
+                                <td>OLD HOUSE</td>
+                                <td>Nhà cũ</td>
+                            </tr>
+                            <tr>
+                                <td>FACTORY</td>
+                                <td>Nhà máy</td>
+                            </tr>
+                            <tr>
+                                <td>ALLEY</td>
+                                <td>Ngõ</td>
+                            </tr>
+                            <tr>
+                                <td>WOODS</td>
+                                <td>Rừng</td>
+                            </tr>
+                            <tr>
+                                <td>OFFICE</td>
+                                <td>Văn phòng</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Weather Conditions -->
+                <div class="item">
+                    <note-2>Weather Conditions</note-2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>English</th>
+                                <th>Tiếng Việt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RAIN</td>
+                                <td>Mưa</td>
+                            </tr>
+                            <tr>
+                                <td>EARLY MORNING</td>
+                                <td>Sáng sớm</td>
+                            </tr>
+                            <tr>
+                                <td>DARK</td>
+                                <td>Tối</td>
+                            </tr>
+                            <tr>
+                                <td>FOG</td>
+                                <td>Sương mù</td>
+                            </tr>
+                            <tr>
+                                <td>GOLDEN HOUR</td>
+                                <td>Giờ vàng</td>
+                            </tr>
+                            <tr>
+                                <td>MOONLIGHT</td>
+                                <td>Ánh trăng</td>
+                            </tr>
+                            <tr>
+                                <td>MIST</td>
+                                <td>Khói mờ</td>
+                            </tr>
+                            <tr>
+                                <td>WINTER</td>
+                                <td>Mùa đông</td>
+                            </tr>
+                            <tr>
+                                <td>TORNADO</td>
+                                <td>Bão lốc</td>
+                            </tr>
+                            <tr>
+                                <td>SUNNY</td>
+                                <td>Nắng</td>
+                            </tr>
+                            <tr>
+                                <td>COLD</td>
+                                <td>Lạnh</td>
+                            </tr>
+                            <tr>
+                                <td>STORM</td>
+                                <td>Bão</td>
+                            </tr>
+                            <tr>
+                                <td>HOT SUN</td>
+                                <td>Nắng nóng</td>
+                            </tr>
+                            <tr>
+                                <td>SUMMER</td>
+                                <td>Mùa hè</td>
+                            </tr>
+                            <tr>
+                                <td>SNOW</td>
+                                <td>Tuyết</td>
+                            </tr>
+                            <tr>
+                                <td>FALL</td>
+                                <td>Mùa thu</td>
+                            </tr>
+                            <tr>
+                                <td>HALLOWEEN</td>
+                                <td>Halloween</td>
+                            </tr>
+                            <tr>
+                                <td>CREEPY</td>
+                                <td>Ám ảnh</td>
+                            </tr>
+                            <tr>
+                                <td>NIGHT</td>
+                                <td>Đêm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////// -->
         <p>
             <note-2>Medium:</note-2>
             <note-1>&lt;any art style&gt;</note-1> style cat

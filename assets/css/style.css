@@ -76,10 +76,10 @@ h2::before {
 
 h3 {
     margin: 32px 0 16px;
-    font-family: var(--font-system);
+    font-family: var(--font-1);
     font-size: 2.4rem;
     font-weight: 500;
-    color: var(--color-3);
+    color: var(--color-6);
     /* Mỗi lần gặp thẻ h3 sẽ tăng +1 */
     counter-increment: heading-h3;
     /* đặt cho heading-h4 = 0 mỗi khi gặp thẻ h3 
@@ -231,6 +231,34 @@ li note-1 {
     overflow: hidden;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+table th {
+    background-color: var(--color-4);
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+table tr:hover,
+table tr:hover th {
+    background-color: var(--color-4);
+    color: #fff;
+}
+
 /* ======================================================== */
 
 /* header */
@@ -247,7 +275,6 @@ li note-1 {
     gap: 30;
     margin-left: 60px;
     position: relative;
-    
 }
 
 .header .menu li {
@@ -459,4 +486,24 @@ li note-1 {
 }
 .header .menu-left li {
     margin-right: 0px;
+}
+/*  */
+.content-main {
+    width: 100%;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+
+.item {
+    margin-top: 50px;
+    display: inline-block;
+    width: 48%;
 }
