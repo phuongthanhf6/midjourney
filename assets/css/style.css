@@ -235,8 +235,11 @@ li note-1 {
 
 /* header */
 .header {
+    top: 0px;
+    position: sticky;
     height: 50px;
     background: #000;
+    z-index: 50;
 }
 
 .header .menu {
@@ -250,8 +253,8 @@ li note-1 {
 }
 
 .header .menu a {
-    display: inline-block;
-    padding: 8px 0 10px;
+    display: block;
+    padding: 8px 20px 10px;
     text-decoration: none;
     font-size: 2rem;
     color: #fff;
@@ -428,8 +431,10 @@ li note-1 {
 .menu-left {
     background: var(--color-2);
     width: 200px;
+    display: none;
+    z-index: 20;
 }
-.menu-left a {
+.header .menu-left a {
     display: block;
     color: #fff;
     text-decoration: none;
@@ -442,6 +447,13 @@ li note-1 {
 
 .menu-left a:hover {
     color: var(--color-5);
-    font-weight: 500;
+    font-weight: 400;
     background: #ffffff20;
+}
+
+.menu li:hover .menu-left {
+    display: block;
+}
+.header .menu-left li {
+    margin-right: 0px;
 }
