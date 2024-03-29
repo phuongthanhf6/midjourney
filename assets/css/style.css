@@ -246,6 +246,8 @@ li note-1 {
     display: flex;
     gap: 30;
     margin-left: 60px;
+    position: relative;
+    
 }
 
 .header .menu li {
@@ -429,6 +431,7 @@ li note-1 {
 }
 /* =================================== */
 .menu-left {
+    position: absolute;
     background: var(--color-2);
     width: 200px;
     display: none;
