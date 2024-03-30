@@ -265,7 +265,7 @@ table tr:hover th {
 }
 
 table tr.highlight-row {
-    background: #2f2cd93a;
+    background: #0400f13f;
 }
 table tr.row-chan {
     background: #2c94d93a;
@@ -278,7 +278,7 @@ table tr.row-quality {
     background: #ef38be2f;
 }
 table tr.row-nsfw {
-    background: #3725c43e;
+    background: #7d06ec44;
 }
 table tr.row-nsfw:hover td,
 table tr.row-quality:hover td,
@@ -294,31 +294,79 @@ table tr.row-letter:hover td {
 .header {
     top: 0px;
     position: sticky;
-    height: 50px;
+    height: 64px;
     background: #000;
-    z-index: 50;
     opacity: 0.9;
+    padding: 10px 0;
+    z-index: 50;
+}
+
+.header .logo {
+    height: 40px;
+    object-fit: cover;
+}
+
+.header img {
+    max-width: 100%;
+}
+
+.header .content-main {
+    display: flex;
+    align-items: center;
 }
 
 .header .menu {
     display: flex;
-    gap: 30;
-    margin-left: 60px;
+    margin-left: 150px;
     position: relative;
 }
 
-.header .menu li {
-    margin-right: 30px;
-}
-
 .header .menu a {
-    display: block;
-    padding: 8px 20px 10px;
+    display: inline-block;
     text-decoration: none;
-    font-size: 2rem;
     color: #fff;
+    font-size: 1.8rem;
+    padding: 4px 20px;
 }
 
+.header .menu > li:hover {
+    background: var(--color-1);
+    border-radius: 4px;
+}
+
+.header .drop-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.header .menu li:hover .drop-menu {
+    display: block;
+}
+
+.header .drop-menu {
+    background: #000000f3;
+    z-index: 60;
+}
+.header .drop-menu li {
+    padding: 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.header .drop-menu li:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.header .drop-menu li:hover {
+    background: var(--color-4);
+    border-radius: 0;
+}
+
+.header .drop-menu a {
+    padding: 4px 20px;
+}
+
+/*  */
 .content img {
     max-width: 100%;
 }
@@ -487,49 +535,6 @@ table tr.row-letter:hover td {
     margin-top: -72px;
 }
 /* =================================== */
-.menu-left {
-    position: absolute;
-    background: var(--color-2);
-    width: 200px;
-    display: none;
-    z-index: 20;
-}
-.header .menu-left a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 14px;
-}
-.menu-left li {
-    margin-bottom: 0px;
-    border-bottom: 1px Dashed #cccccc6a;
-}
-
-.menu-left a:hover {
-    color: var(--color-5);
-    font-weight: 400;
-    background: #ffffff20;
-}
-
-.menu li:hover .menu-left {
-    display: block;
-}
-.header .menu-left li {
-    margin-right: 0px;
-}
-/* Drop menu */
-.drop-menu {
-    position: absolute;
-    left: 100%;
-    top: 0;
-    background: var(--color-2);
-    width: 200px;
-    display: none;
-}
-
-.menu-left li:hover .drop-menu {
-    display: block;
-}
 
 /*  */
 .content-main {
@@ -567,7 +572,7 @@ table tr.row-letter:hover td {
 }
 
 #exp-prompt .content-main {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 #exp-prompt .title {
