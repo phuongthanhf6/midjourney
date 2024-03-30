@@ -24,6 +24,11 @@
     lúc này ta muốn chuyển 1 px nào đó qua rem thì chỉ cần chia cho 10px
     vd: width: 50px = 5rem ( còn như thông thường 50px / 16px = 3.125rem)  
 */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
