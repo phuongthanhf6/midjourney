@@ -36,8 +36,9 @@
                         </ul>
                     </li>
                     <li><a href="#upscale">Upscale</a></li>
+                    <li><a href="#command">Commands</a></li>
                     <li><a href="#parameters">Parameters</a></li>
-                    <li><a href="#list-prompt">List Prompt</a></li>
+                    <li><a href="#character">Cố định nhân vật</a></li>
                     <li><a href="#nagative">Nagative</a></li>
                 </ul>
             </div>
@@ -737,6 +738,208 @@
                 </p>
             </div>
         </section>
+        <!-- Command -->
+        <section id="command">
+            <div class="content-main">
+                <h2>Commands</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tiêu đề</th>
+                            <th>Tiếng Việt</th>
+                            <th>Tiếng Anh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/subscribe</td>
+                            <td>
+                                nhập lệnh này để thanh toán cho Midjourney & bắt
+                                đầu tạo hình
+                            </td>
+                            <td>
+                                type this to pay for Midjourney & start creating
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/imagine</td>
+                            <td>
+                                lệnh để bắt đầu prompt của bạn & tạo hình ảnh
+                            </td>
+                            <td>
+                                command to start your prompt & create images
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/blend</td>
+                            <td>cho phép bạn kết hợp 2 đến 5 hình ảnh</td>
+                            <td>allows you to blend together 2 to 5 images</td>
+                        </tr>
+                        <tr>
+                            <td>/settings</td>
+                            <td>thay đổi các tùy chọn tạo hình ảnh của bạn</td>
+                            <td>change your image generation preferences</td>
+                        </tr>
+                        <tr>
+                            <td>/remix</td>
+                            <td>
+                                chế độ remix, bạn có thể chỉnh sửa prompt khi
+                                tạo các biến thể
+                            </td>
+                            <td>
+                                remix mode, you can edit prompts when creating
+                                variations
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/tune</td>
+                            <td>
+                                cho phép bạn tạo mã --style tùy chỉnh của riêng
+                                bạn
+                            </td>
+                            <td>
+                                allows you to create your own customized --style
+                                code
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/describe</td>
+                            <td>
+                                tải lên một hình ảnh để tạo ra 4 prompt / mô tả
+                            </td>
+                            <td>
+                                upload an image to generate a 4 prompts /
+                                descriptions
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/shorten</td>
+                            <td>rút ngắn độ dài của prompt của bạn</td>
+                            <td>shortens your prompt length</td>
+                        </tr>
+                        <tr>
+                            <td>/info</td>
+                            <td>
+                                thống kê về tài khoản của bạn và việc sử dụng
+                                trong tháng này
+                            </td>
+                            <td>
+                                stats about your account and this month's usage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/fast</td>
+                            <td>
+                                tốc độ mặc định cho việc tạo hình ảnh, sử dụng
+                                thời gian GPU có thể thanh toán
+                            </td>
+                            <td>
+                                default speed for image generations, uses
+                                billable GPU time
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/relax</td>
+                            <td>
+                                chế độ chậm hơn, ưu tiên thấp hơn không sử dụng
+                                thời gian GPU có thể thanh toán
+                            </td>
+                            <td>
+                                a slower, low priority mode that doesn't use
+                                billable GPU time
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/turbo</td>
+                            <td>
+                                chế độ siêu nhanh, sử dụng thời gian GPU đắt hơn
+                            </td>
+                            <td>
+                                extra fast mode which is more expensive GPU time
+                                usage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/help</td>
+                            <td>
+                                hiển thị thông tin hữu ích để sử dụng Midjourney
+                                tốt hơn
+                            </td>
+                            <td>
+                                shows helpful information to help use Midjourney
+                                better
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/show</td>
+                            <td>
+                                chèn ID công việc để xem công việc đó trong
+                                discord
+                            </td>
+                            <td>insert a Job ID to view that job in discord</td>
+                        </tr>
+                        <tr>
+                            <td>/private</td>
+                            <td>
+                                tạo hình ảnh ẩn không công khai (yêu cầu kế
+                                hoạch 'Pro')
+                            </td>
+                            <td>
+                                creates images hidden from public (requires
+                                'Pro' plan)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/stealth</td>
+                            <td>cùng với /private (yêu cầu kế hoạch 'Pro')</td>
+                            <td>does same as /private (requires 'Pro' plan)</td>
+                        </tr>
+                        <tr>
+                            <td>/public</td>
+                            <td>hình ảnh bạn tạo sẽ có thể được công khai</td>
+                            <td>images you create will be publicly viewable</td>
+                        </tr>
+                        <tr>
+                            <td>/ask</td>
+                            <td>hỏi Midjourney một câu hỏi</td>
+                            <td>ask Midjourney a question</td>
+                        </tr>
+                        <tr>
+                            <td>/prefer option</td>
+                            <td>tạo hoặc quản lý một tùy chọn tùy chỉnh</td>
+                            <td>create or manage a custom option</td>
+                        </tr>
+                        <tr>
+                            <td>/prefer option list</td>
+                            <td>xem các tùy chọn tùy chỉnh hiện tại của bạn</td>
+                            <td>view your current custom options</td>
+                        </tr>
+                        <tr>
+                            <td>/prefer suffix</td>
+                            <td>
+                                thêm văn bản tùy chỉnh mặc định vào cuối mỗi
+                                prompt
+                            </td>
+                            <td>
+                                add default custom text to the end of every
+                                prompt
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/prefer variability</td>
+                            <td>
+                                Chuyển đổi giữa biến thể cao & thấp khi sử dụng
+                                V1 V2 V3 và V4 dưới lưới hình ảnh
+                            </td>
+                            <td>
+                                Toggle between High & Low variations when using
+                                the V1 V2 V3 and V4 under an image grid
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
         <!-- Parameters -->
         <section id="parameters">
             <div class="content-main">
@@ -757,7 +960,7 @@
                     </tr>
                     <tr>
                         <td>--quality</td>
-                        <td>Thay đổi chất lượng của hình ảnh.</td>
+                        <td>Thay đổi chất lượng của hình ảnh. (0 - 2)</td>
                         <td>--quality 1.5</td>
                         <td>1.0</td>
                     </tr>
@@ -776,7 +979,8 @@
                     <tr>
                         <td>--seed</td>
                         <td>
-                            Thiết lập hạt giống cho thuật toán tạo hình ảnh.
+                            Sử dụng cùng một số hạt giống và lời nhắc sẽ tạo ra
+                            hình ảnh kết thúc tương tự
                         </td>
                         <td>--seed 1234</td>
                         <td>Ngẫu nhiên</td>
@@ -840,9 +1044,11 @@
                     </tr>
                     <tr>
                         <td>--chaos</td>
-                        <td>Thêm độ nhiễu và biến động vào hình ảnh.</td>
-                        <td>--chaos 0.5</td>
-                        <td>0.0</td>
+                        <td>
+                            thay đổi số lượng đa dạng trong lưới tạo hình ảnh.
+                        </td>
+                        <td>--chaos 50</td>
+                        <td>0 - 100</td>
                     </tr>
                     <tr>
                         <td>--temperature</td>
@@ -893,28 +1099,43 @@
                     </tr>
                     <tr>
                         <td>--fast</td>
-                        <td>
-                            Tạo hình ảnh nhanh hơn (có thể làm giảm chất lượng).
-                        </td>
+                        <td>Chế độ nhanh.</td>
                         <td>--fast</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>--relax</td>
+                        <td>Chế độ thư giãn.</td>
+                        <td>--relax</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>--turbo</td>
+                        <td>
+                            Tăng tốc độ tạo hình ảnh (có thể làm giảm chất
+                            lượng).
+                        </td>
+                        <td>--turbo</td>
                         <td>False</td>
                     </tr>
                     <tr>
                         <td>--iw</td>
                         <td>
-                            Chọn độ rộng mong muốn của hình ảnh (0 = tự động, 1
-                            = nhỏ, 2 = lớn).
+                            thay đổi mức độ ưu tiên CỦA URL hình ảnh trong lời
+                            nhắc (0 = nhỏ, 1 = mặc định, 2 = lớn).
                         </td>
                         <td>--iw 1</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>--no</td>
+                        <td>--no(word)</td>
                         <td>
-                            Bỏ qua các tính năng nâng cao như phong cách, lặp
-                            lại, v.v.
+                            Xoá các thông tin trong "word" ra khỏi bức ảnh của
+                            bạn
                         </td>
-                        <td>--no style</td>
+                        <td>
+                            city streets --no cars people (remove cars & people)
+                        </td>
                         <td>False</td>
                     </tr>
                     <tr>
@@ -923,12 +1144,7 @@
                         <td>--style random</td>
                         <td>None</td>
                     </tr>
-                    <tr>
-                        <td>--relax</td>
-                        <td>Làm cho hình ảnh ít chi tiết hơn.</td>
-                        <td>--relax</td>
-                        <td>False</td>
-                    </tr>
+
                     <tr>
                         <td>--repeat</td>
                         <td>
@@ -945,9 +1161,13 @@
                     </tr>
                     <tr>
                         <td>--stylize</td>
-                        <td>Tăng cường phong cách của hình ảnh.</td>
-                        <td>--stylize</td>
-                        <td>False</td>
+                        <td>
+                            ảnh hưởng mạnh mẽ đến phong cách thẩm mỹ Mặc định
+                            Của Midjourney được áp dụng Cho Công việc. 0 = Thấp
+                            nhất, 1000=cao nhất, 100 = mặc định
+                        </td>
+                        <td>--stylize 200</td>
+                        <td>0 - 1000</td>
                     </tr>
                     <tr>
                         <td>--tile</td>
@@ -955,15 +1175,7 @@
                         <td>--tile</td>
                         <td>False</td>
                     </tr>
-                    <tr>
-                        <td>--turbo</td>
-                        <td>
-                            Tăng tốc độ tạo hình ảnh (có thể làm giảm chất
-                            lượng).
-                        </td>
-                        <td>--turbo</td>
-                        <td>False</td>
-                    </tr>
+
                     <tr>
                         <td>--weird</td>
                         <td>Thêm độ kỳ ảo vào hình ảnh.</td>
@@ -985,13 +1197,134 @@
                         <td>--version</td>
                         <td>None</td>
                     </tr>
+                    <tr>
+                        <td>--weird</td>
+                        <td>
+                            thêm điều này để làm cho hình ảnh của bạn trông kỳ
+                            lạ hơn. 0 = thấp nhất, 3000 = cao nhất.
+                        </td>
+                        <td>--weird 1000</td>
+                        <td>0 - 3000</td>
+                    </tr>
+                    <tr>
+                        <td>--sref</td>
+                        <td>
+                            <b>Cố định phong cách nghệ thuật</b>, URL là đường
+                            dẫn hình ảnh dùng để tham khảo phong cách
+                        </td>
+                        <td>--sref (URL image)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>--sw</td>
+                        <td>
+                            Tăng/ giảm tỉ trọng --sw (0 - 1000 / mặc định 100)
+                            <b500
+                                ><i
+                                    >giúp tăng giảm mức độ ảnh hưởng phong
+                                    cách</i
+                                ></b500
+                            >.
+                        </td>
+                        <td>--sw 150</td>
+                        <td>0 - 1000</td>
+                    </tr>
+                    <tr>
+                        <td>--cref</td>
+                        <td>
+                            <b>Cố định nhân vật</b>, URL là đường dẫn hình ảnh
+                            của người hay động vật
+                        </td>
+                        <td>--cref URL image</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>--cw</td>
+                        <td>
+                            <b>Giá trị 0:</b> chỉ tập trung vào khuôn mặt, có
+                            thể thay đổi trang phục <br />
+                            <b> Giá trị 100:</b> tập trung cào tất cả
+                        </td>
+                        <td>
+                            --cw 0 --cref (URL character image)<br />
+                            --cw 100 --cref (URL character image)
+                        </td>
+                        <td>0, 100</td>
+                    </tr>
                 </table>
             </div>
         </section>
         <!-- List Prompt -->
-        <section id="list-prompt">
+        <section id="character">
             <div class="content-main">
-                <h2>Các câu prompt hay</h2>
+                <h2>Cố định nhân vật</h2>
+                <h3>
+                    Hướng dẫn tạo ảnh 2 (hay nhiều) nhân vật cố định cùng chung
+                    trong một khung hình
+                </h3>
+                <h4>Kết hợp Character Reference và Vary - Region</h4>
+                <p>
+                    Hiện nay Mid Journey vẫn chưa hỗ trợ chính thức tạo 2 (hay
+                    nhiều) nhân vật cố định, nhưng bạn có thể kết hợp sử dụng 2
+                    tính năng Character Reference và Vary - Region để tạo nhiều
+                    nhân vật.
+                </p>
+                <h4>Cách làm</h4>
+                <ul>
+                    <li>
+                        - Khởi tạo ảnh riêng 2 của nhân vật, sẽ có 2 giá trị
+                        thông số <b500>--cref URL character 1</b500> và
+                        <b500>--cref URL character 2</b500>
+                    </li>
+                    <li>
+                        - Tạo ảnh chung có 2 nhân vật, sử dụng ảnh nhân vật 1 để
+                        tạo <b500>--cref URL character 1</b500>
+                    </li>
+                    <li>
+                        - Lúc này ảnh tạo ra sẽ gặp lỗi 2 nhân vật trong ảnh sẽ
+                        trộn lẫn, <b500>chọn ảnh tốt nhất</b500> và bật tính
+                        năng <b500>Vary - region</b500>, inpainting lại nhân vật
+                        lỗi với thông số <b500>--cref URL character 2</b500>
+                    </li>
+                </ul>
+                <h3>Nhân vật cố định thay đổi trang phục</h3>
+                <p>
+                    Chức năng Nhân vật cố định Character Reference còn có thể
+                    giúp thay đổi Trang phục của nhân vật.
+                </p>
+                <p>
+                    Bằng cách cho chỉ số --cw bằng 0 ( --cw 0 ), Character
+                    Reference sẽ chi tập trung vào khuôn mặt, giúp cho việc thay
+                    đổi trang phục.
+                </p>
+                <p>
+                    <note-1>/imagine prompt:</note-1>
+                    <b500
+                        >&lt;nhân vật&gt; &lt;trang phục&gt; --cw 0 --cref URL
+                        character</b500
+                    >
+                </p>
+                <p>
+                    Ví dụ: a man wearing a white blouse doctor --cw 0 --cref
+                    URLnhanvat
+                </p>
+                <h3>Nhân vật cố định thay đổi độ tuổi</h3>
+                <p>
+                    <note-1>/imagine prompt</note-1>
+                    <b500>
+                        &lt;nhân vật&gt; &lt;độ tuổi&gt; --cw 0 --cref URL
+                        character</b500
+                    >
+                </p>
+                <p>Example:</p>
+                <p>a baby, 5 years old --cw 0 --cref URL character</p>
+                <p>a teenage, 10 years old --cw 0 --cref URL character</p>
+                <p>a young boy, 25 years old --cw 0 --cref URL character</p>
+                <p>
+                    <note-1>Tip:</note-1> khi sử dụng tham số --cref có thể kết hợp nhiều URL
+                    hình ảnh nhân vật các độ tuổi để giữ sự cố định được tốt
+                    nhất, ví dụ: --cref URL nv1 URL nv2
+                </p>
             </div>
         </section>
         <!-- Nagative Prompt -->
