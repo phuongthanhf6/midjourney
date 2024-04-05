@@ -560,7 +560,7 @@ table tr.row-letter:hover td {
 }
 
 .item {
-    margin-top: 50px;
+    padding-top: 70px;
     display: inline-block;
     width: 48%;
 }
