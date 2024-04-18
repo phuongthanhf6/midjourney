@@ -375,8 +375,9 @@ quo::after {
 
 .header .menu {
     display: flex;
-    margin-left: 150px;
+    margin-left: 100px;
     position: relative;
+    width: 100%;
 }
 
 .header .menu a {
@@ -621,7 +622,8 @@ quo::after {
 #prompt,
 #nagative,
 #character,
-#command {
+#command,
+#presets {
     padding-top: 50px;
 }
 
@@ -637,6 +639,8 @@ quo::after {
 #exp-prompt .title {
     margin-top: 0;
 }
-#nagative {
-    padding-bottom: 50px;
+
+
+#presets h3{
+    padding-top: 70px;
 }

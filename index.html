@@ -50,7 +50,13 @@
                     <li><a href="#parameters">Parameters</a></li>
                     <li><a href="#character">Cố định nhân vật</a></li>
                     <li><a href="#nagative">Nagative</a></li>
-                    <li><a href="#presets">Presets</a></li>
+                    <li>
+                        <a href="#presets">Presets</a>
+                        <ul class="drop-menu">
+                            <li><a href="#prefer-option">Prefer Option</a></li>
+                            <li><a href="#stylize">Stylize</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -1572,9 +1578,12 @@
                     <tr>
                         <td>--chaos</td>
                         <td>
-                            thay đổi số lượng đa dạng trong lưới tạo hình ảnh.
+                            thay đổi số lượng đa dạng trong lưới tạo hình ảnh. <br>
+                            Giá trị <b500>cao</b500> sẽ tạo ra nhiều kết quả và bố
+                            cục bất thường và bất ngờ hơn. <br>
+                            Giá trị <b500>thấp</b500> có kết quả đáng tin cậy hơn.
                         </td>
-                        <td>--chaos 50</td>
+                        <td>--chaos 25</td>
                         <td>0 - 100</td>
                     </tr>
                     <tr>
@@ -2038,7 +2047,9 @@
         <section id="presets">
             <div class="content-main">
                 <h2>Settings and Presets</h2>
-                <h3>Lưu cấu trúc parameters thường sử dụng thành mã code</h3>
+                <h3 id="prefer-option">
+                    Lưu cấu trúc parameters thường sử dụng thành mã code
+                </h3>
                 <note-1>Sử dụng cú pháp: /prefer option </note-1>
                 <p>
                     Example: <note-1>/prefer option set</note-1>
@@ -2062,6 +2073,24 @@
                     Tip: giúp rút ngắn câu lệnh và tối ưu hơn cho text prompt
                     khi mà ta có những parameter dùng thường xuyên lặp lại
                 </quo>
+                <p><note-1>Xem List danh sách : </note-1>/prefer option list</p>
+                <h3 id="stylize">Stylize</h3>
+                <p>
+                    Giá trị <b500>thấp</b500> tạo ra hình ảnh gần giống với lời
+                    nhắc nhưng kém tính nghệ thuật. <br />
+                    Giá trị <b500>cao</b500> tạo nên những hình ảnh mang tính
+                    nghệ thuật cao nhưng ít có gần prompt.
+                </p>
+                <quo>
+                    Stylize Low = --s 50, Stylize Med = --s 100, Stylize High =
+                    --s 250, Stylize Very High = --s 750
+                </quo>
+                <img
+                    class="img-w600"
+                    src="./assets/img/stylize.png"
+                    alt=""
+                    style="padding: 20px 0"
+                />
             </div>
         </section>
     </body>
