@@ -50,6 +50,7 @@
                     <li><a href="#parameters">Parameters</a></li>
                     <li><a href="#character">Cố định nhân vật</a></li>
                     <li><a href="#nagative">Nagative</a></li>
+                    <li><a href="#presets">Presets</a></li>
                 </ul>
             </div>
         </header>
@@ -1257,6 +1258,11 @@
                 <p>
                     <b>Upscale (Creative)</b> thêm các chi tiết mới vào hình ảnh
                 </p>
+                <p>&lt;link kênh của bạn&gt; / ?sub_confirmation=1</p>
+                <p>
+                    Example:
+                    https://www.youtube.com/@fantasticworldvn/?sub_confirmation=1
+                </p>
             </div>
         </section>
         <!-- Command -->
@@ -1687,7 +1693,10 @@
                             Của Midjourney được áp dụng Cho Công việc. 0 = Thấp
                             nhất, 1000=cao nhất, 100 = mặc định
                         </td>
-                        <td>--stylize 200 <br> --s 200</td>
+                        <td>
+                            --stylize 200 <br />
+                            --s 200
+                        </td>
                         <td>0 - 1000</td>
                     </tr>
                     <tr>
@@ -1842,11 +1851,11 @@
                 <p>a baby, 5 years old --cw 0 --cref URL character</p>
                 <p>a teenage, 10 years old --cw 0 --cref URL character</p>
                 <p>a young boy, 25 years old --cw 0 --cref URL character</p>
-                <p>
-                    <note-1>Tip:</note-1> khi sử dụng tham số --cref có thể kết
-                    hợp nhiều URL hình ảnh nhân vật các độ tuổi để giữ sự cố
-                    định được tốt nhất, ví dụ: --cref URL nv1 URL nv2
-                </p>
+                <quo>
+                    Tip:khi sử dụng tham số --cref có thể kết hợp nhiều URL hình
+                    ảnh nhân vật các độ tuổi để giữ sự cố định được tốt nhất, ví
+                    dụ: --cref URL nv1 URL nv2
+                </quo>
             </div>
         </section>
         <!-- Nagative Prompt -->
@@ -2023,6 +2032,36 @@
                         </table>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Presets -->
+        <section id="presets">
+            <div class="content-main">
+                <h2>Settings and Presets</h2>
+                <h3>Lưu cấu trúc parameters thường sử dụng thành mã code</h3>
+                <note-1>Sử dụng cú pháp: /prefer option </note-1>
+                <p>
+                    Example: <note-1>/prefer option set</note-1>
+                    <text-red>&lt;name&gt; &lt;value&gt;</text-red>
+                </p>
+                <img
+                    class="img-w600"
+                    src="https://cdn.document360.io/3040c2b6-fead-4744-a3a9-d56d621c6c7e/Images/Documentation/prefer-option-set-diagram.png"
+                    alt=""
+                />
+                <p>
+                    /imagine prompt <b500>cat painting</b500>
+                    <text-red>--mine</text-red>
+                </p>
+                <p>
+                    Lúc này nó sẽ hiểu là: /imagine prompt
+                    <b500>cat painting</b500>
+                    <text-red>--chaos 5 --aspect 2:3 </text-red>
+                </p>
+                <quo>
+                    Tip: giúp rút ngắn câu lệnh và tối ưu hơn cho text prompt
+                    khi mà ta có những parameter dùng thường xuyên lặp lại
+                </quo>
             </div>
         </section>
     </body>

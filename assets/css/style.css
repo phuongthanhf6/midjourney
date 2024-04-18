@@ -40,6 +40,7 @@ body {
     /* heading h2 = 0 */
     counter-reset: heading-h2;
     font-weight: 300;
+    padding-bottom: 50px;
 }
 
 ::selection {
@@ -296,6 +297,55 @@ table tr.row-letter:hover td {
     background-color: var(--color-4);
     color: #fff;
 }
+
+text-red {
+    color: red;
+}
+
+text-yellow {
+    color: yellow;
+}
+
+quo {
+    border-left: 10px solid;
+    border-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%) 1;
+    clip-path: inset(0px round 0);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    min-height: 100%;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    position: relative;
+}
+
+quo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #fffb7d3d;
+    height: 60px;
+}
+
+/* ===================== */
+.img-w600 {
+    width: 600px;
+    object-fit: cover;
+}
+
+.img-w1000 {
+    width: 1000px;
+    object-fit: cover;
+}
+
 /* ======================================================== */
 
 /* header */
